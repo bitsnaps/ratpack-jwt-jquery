@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Ratpack: Jwt Authentication</title>
+  <meta name='apple-mobile-web-app-title' content='Ratpack' />
+  <meta name='description' content='' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <script src='/scripts/jquery-1.7.2.js'></script>
+  <link href='/images/favicon.ico' rel='shortcut icon' />
+</head>
+
+<body>
+  <header>
+    <h1>Ratpack JWT</h1>
+    <p>This page demonstrate the simple mechanisme of usign Pac4 and JWT with Ratpack</p>
+  </header>
+
+  <p>1. You need to login (use any username/password)</p>
+  <form id='loginForm' method='POST' action='login'>
+    <input type="text" id='username' name='username' placeholder='User Name' />
+    <input type="password" id='password' name='password' placeholder='Password' />
+    <input type='submit' value='Login' />
+  </form>
+  <br />
+
+  <p>2. Click here to access a secured content using HeaderClient (check out the console):</p>
+  <button id='btnSecured'>Secured</button>
+
+  <p>3. Try to access the Administration page using ParameterClient:</p>
+  <a id="adminLink" href='admin'>Administration page</a><br />
+
+  <a id="btnLogout" href="#">Logout</a>
+
+  <script src='/scripts/app.js'></script>
+</body>
+
+</html>
