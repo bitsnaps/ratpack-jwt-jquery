@@ -96,7 +96,7 @@ ratpack {
             ctx.response.status(400).send("Access denied.")
         }
       }
-    } // prefix('secured'
+    } // prefix('secured')
 
     // Use indexFiles in case you want to build a REST API with a unique web page
     files { dir "public" indexFiles 'index.html' }
